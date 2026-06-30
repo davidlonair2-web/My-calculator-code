@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="calculator style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <input type="text" id="calcDisplay" value="0" disabled>
+        <div class="calculator-grid">
+            <button class="hive" clear-btn" onclick="clearDisplay()">C</button>
+            <button class="hive" delete-btn" onclick="deleteLast()">⌫</button>
+            <button class="hive" onclick="appendValue('(')">(</button>
+            <button class="hive" onclick="appendValue(')')">)</button>
+            <button class="hive" onclick="appendValue('^')">^</button>
+            <button class="hive" onclick="appendValue('√(')">√</button>
+            <button class="hive" onclick="appendValue('/')">/</button>
+            <button class="hive" onclick="appendValue('*')">*</button>
+            <button class="hive" onclick="appendValue('7')">7</button>
+            <button class="hive" onclick="appendValue('8')">8</button>
+            <button class="hive" onclick="appendValue('9')">9</button>
+            <button class="hive" onclick="appendValue('-')">-</button>
+            <button class="hive" onclick="appendValue('4')">4</button>
+            <button class="hive" onclick="appendValue('5')">5</button>
+            <button class="hive" onclick="appendValue('6')">6</button>
+            <button class="hive" onclick="appendValue('+')">+</button>
+            <button class="hive" onclick="appendValue('1')">1</button>
+            <button class="hive" onclick="appendValue('2')">2</button>
+            <button class="hive" onclick="appendValue('3')">3</button>
+            <button class="hive" onclick="appendValue('.')">.</button>
+            <button class="hive" onclick="appendValue('0')">0</button>
+            <button class="hive" equal-btn" onclick="calculateResult()">=</button> 
+        </div>
+    </div>
+
+    <script src="Calculator script.js"></script>
+</body>
+</html>
